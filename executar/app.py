@@ -8,7 +8,7 @@ def home ():
     return render_template('templates\home.html')
 @app.route('/cadastro')
 def cadastro():
-    pass
+    return render_template('templates\cadastro.html')
 @app.route('/login')
 def login():
-    pass
+    return render_template('templates\login.html')
