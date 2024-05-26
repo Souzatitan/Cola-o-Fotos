@@ -1,33 +1,27 @@
 import mysql.connector
 from mysql.connector import errorcode
-from flask_bcrypt import generate_password_hash
+
 
 
 try:
-    banco = mysql.connector.connect(
-        host='127.0.0.1'
-        user='root'
-        password='Efds11091999.'
-        
-        
-    )
+    conn=mysql.connector.connect(
+        host='127.0.0.1',
+        user='root',
+        password='Efds11091999.',
+      )
+    
 except mysql.connector.Error as err:
       if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
             print('Existe algo errado no nome de usuário ou senha')
       else:
             print(err)
-else:
-      if banco.is_connected():
-            print('conexão estabelecida')
-            cursor=banco.cursor()
-
-      banco.close()
-      cursor.close()
-      
+            
+            
 cursor = conn.cursor()
+
 cursor.execute ("'DROP DATABASE IF EXIST `usuarios`;")
 cursor.execute ("CREATE DATABASE `usuario`;")
-cursor.execute ("USE `usuarios`;")
+cursor.execute ("USE `usuarios`;")   
 
 TABLLE = []
 TABLLE ['info_usuarios']=('''
