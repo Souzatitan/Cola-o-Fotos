@@ -1,0 +1,184 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center{
+	width: 100%;
+	padding:0 2%;
+	display: flex;
+	justify-content: center;
+	margin:0 auto;
+}
+
+header{
+	background-color: rgba(0, 0, 0, 0.3);
+	height:70px;
+}
+
+.logo{
+	color:white;
+	margin-top:25px;
+}
+.menu-container{
+	width:100%;
+	justify-content: space-between;
+}
+
+.menu-container a.active-menu{
+	background-color:#4B0082;
+}
+
+.menu-container a{
+	color: white;
+	display: inline-block;
+	margin:0 10px;
+	text-decoration: none;
+	padding:0 10px;
+	line-height:70px;
+	transition: 0.8s;
+}
+
+.menu-container a:hover{
+	color:#ec4141;
+}
+
+
+section.main{
+	position: relative;
+	min-height: 800px;
+	background-color: #C6B3FD;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.form {
+	margin-left: 350px;
+	margin-top: 80px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .212);
+    border-radius: 10px;
+	
+}
+
+.form-header {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group {
+	
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+}
+
+.input-box {
+	margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+
+}
+
+.input-box input:focus-visible{
+    outline: 1px solid blueviolet;
+
+} 
+
+.input-box label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.Lembrar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.Lembrar label input {
+    accent-color:#000;
+    text-decoration: none;
+}
+.Lembrar a{
+    color:black;
+    text-decoration: none;
+}
+
+.Lembrar a:hover{
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background:red;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color:#333;
+    font-weight: 600;
+}
+
+.btn:hover{
+    color:blue;
+}
+.register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+
+footer{
+	background-color: #333;
+	text-align: center;
+	padding: 8px;
+}
+
+@media screen {
+	
+}

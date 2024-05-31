@@ -1,0 +1,200 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center{
+	width:100%;
+	padding:0 2%;
+	display: flex;
+	justify-content: center;
+	margin:0 auto;
+}
+
+header{
+	background-color: rgba(0, 0, 0, 0.3);
+	height:70px;
+}
+
+.logo{
+	color:white;
+	margin-top:25px;
+}
+.menu-container{
+	width:100%;
+	justify-content: space-between;
+}
+
+.menu-container a.active-menu{
+	background-color:#4B0082;
+}
+
+.menu-container a{
+	color: white;
+	display: inline-block;
+	margin:0 10px;
+	text-decoration: none;
+	padding:0 10px;
+	line-height:70px;
+	transition: 0.8s;
+}
+
+.menu-container a:hover{
+	color:#ec4141;
+}
+
+
+section.main{
+	position: relative;
+	min-height: 800px;
+	background-color: #C6B3FD;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.form {
+	margin-left: 350px;
+	margin-top: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .212);
+    border-radius: 10px;
+	
+}
+
+.form-header {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: blueviolet;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+
+}
+
+.input-box input:focus-visible{
+    outline: 1px solid blueviolet;
+
+} 
+
+.input-box label,
+.gender-title h4 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+    
+
+}
+.gender-input {
+    display: flex;
+    align-items: center;
+    
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+
+}
+
+.continue-button button {
+    width: 30%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: red;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover{
+    background-color:blue;
+
+}
+
+.continue-button button a{
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color:white
+}
+
+.info{
+    margin-top: 1.5rem;
+    display: flex;
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: #000000c0;
+    
+}
+
+span{
+    text-decoration: underline;
+}
+footer{
+	background-color: #333;
+	text-align: center;
+	padding: 8px;
+}
+
+@media screen {
+	
+}
