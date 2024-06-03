@@ -19,12 +19,12 @@ except mysql.connector.Error as err:
             
 cursor = conn.cursor()
 
-cursor.execute ("DROP DATABASE IF EXISTS `usuario`;")
-cursor.execute ("CREATE DATABASE `usuario`;")
-cursor.execute ("USE `usuario`;")   
+cursor.execute("DROP DATABASE IF EXISTS `usuario`;")
+cursor.execute("CREATE DATABASE `usuario`;")
+cursor.execute("USE `usuario`;")
 
-TABLE = {}
-TABLE ['info_usuarios']= '''
+TABLE={}
+TABLE['info_usuarios']='''
     CREATE TABLE `info_usuarios` (
         `nome` varchar(20) NOT NULL,
         `email` varchar(50) NOT NULL,

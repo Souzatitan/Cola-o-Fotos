@@ -4,13 +4,18 @@ app=Flask(__name__)
 
 
 @app.route('/')
-def home ():
-    return render_template('home.html')
+def home():
+    return render_template('Login/login.html')
 @app.route('/cadastro')
 def cadastro():
-    return render_template('cadastro.html')
-@app.route('/login')
+    return render_template('Cadastro/cadastro.html')
+@app.route('/enviar')
 def login():
-    return render_template('login.html')
+    return render_template('Enviar/envia.html')
+@app.route('/fotos')
+def fotos():
+    return render_template('Enviar/envia.html')
+
+
 
 app.run(debug=True)

@@ -5,7 +5,7 @@ SQLALCHEMY_DATABASE_URI ='mysql+mysqlconnector://{username}:{password}@{host}:{p
         usuario = 'root',
         senha = 'Efds11091999.',
         servidor = 'localhost',
-        database = 'jogoteca'
+        database = 'usuario'
         
     )
 UPLOAD_PATH = os.path.dirname(os.path.abspath(__file__)) + '/uploads'
