@@ -54,6 +54,20 @@ section.main{
 
 }
 
+.form {
+	margin-left: 350px;
+	margin-top: 80px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .212);
+    border-radius: 10px;
+	
+}
+
 .text-chamada{
 	width: 80%;
 	font-size: 52px;
