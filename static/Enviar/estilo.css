@@ -53,6 +53,68 @@ section.main{
 	background-position: center;
 
 }
+.form {
+	margin-left: 350px;
+	margin-top: 80px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .212);
+    border-radius: 10px;
+	
+}
+.form-header {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group {
+	
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+}
+
+.input-box {
+	margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+
+}
+
+.input-box input:focus-visible{
+    outline: 1px solid blueviolet;
+
+} 
+
+.input-box label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
 
 .text-chamada{
 	color:white;
@@ -66,47 +128,6 @@ section.main{
 	font-size: 40px;
 }
 
-section.Heróis{
-	background-color:#708090;
-	padding:20px 0;	
-	text-align: center;
-	color: white;
-}
-
-section.Heróis h3{
-	text-transform: uppercase; 
-}
-
-.produt-single{
-	text-align: left;
-}
-
-.produto-container{
-	width:100%;
-	justify-content: space-around;
-}
-
-.produt-single{
-	width: 100%;
-	margin:0 10px;
-}
-
-.produt-single h3{
-	text-align: center;
-	background-color: #ec4141;
-	border:1px solid white;
-	padding: 8px;
-}
-
-.produt-single p{
-	background-color: white;
-	padding: 8px;
-	color: black;
-}
-.produt-single img{
-	width: 100%;
-	display: block;
-}
 
 footer{
 	background-color: #333;
