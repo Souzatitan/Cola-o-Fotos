@@ -9,6 +9,7 @@
 	width:100%;
 	padding:0 2%;
 	display: flex;
+	justify-content: center;
 	margin:0 auto;
 }
 
@@ -24,10 +25,8 @@ header{
 .menu-container{
 	width:100%;
 	justify-content: space-between;
-}
-
-.menu-container a.active-menu{
-	background-color:#4B0082;
+	display: flex;
+    align-items: center;
 }
 
 .menu-container a{
@@ -41,7 +40,7 @@ header{
 }
 
 .menu-container a:hover{
-	color:#ec4141;
+	background-color:#4B0082;
 }
 
 
@@ -55,17 +54,16 @@ section.main{
 }
 
 .form {
-	margin-left: 350px;
-	margin-top: 80px;
-    width: 50%;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: white;
     padding: 3rem;
-    box-shadow: 5px 5px 10px rgba(0,0,0, .212);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
     border-radius: 10px;
-	
 }
 
 .text-chamada{
@@ -98,6 +96,89 @@ footer{
 	padding: 8px;
 }
 
-@media screen {
-	
+@media (max-width: 1200px) {
+    .text-chamada {
+        font-size: 42px;
+        left: 30px;
+    }
+
+    .text-chamada h1 {
+        font-size: 38px;
+    }
+
+    .img {
+        right: -150px;
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 992px) {
+    .text-chamada {
+        font-size: 36px;
+        left: 20px;
+    }
+
+    .text-chamada h1 {
+        font-size: 32px;
+    }
+
+    .img {
+        right: -100px;
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+    }
+
+    .menu-container a {
+        margin: 10px 0;
+        line-height: initial;
+    }
+
+    .form {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .text-chamada {
+        width: 90%;
+        font-size: 32px;
+        left: 10px;
+        bottom: 80px;
+    }
+
+    .text-chamada h1 {
+        font-size: 28px;
+    }
+
+    .img {
+        right: -50px;
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .text-chamada {
+        width: 100%;
+        font-size: 28px;
+        left: 5px;
+        bottom: 60px;
+    }
+
+    .text-chamada h1 {
+        font-size: 24px;
+    }
+
+    .img {
+        right: 0;
+        transform: scale(1);
+    }
 }
