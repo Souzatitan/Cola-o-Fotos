@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='login/estilo.css')}}">
+</head>
+<body>
+
+	<section class="main">
+		<header>
+			<div class="center menu-container">
+				<div class="logo">
+					<h3><i class="fa-solid fa-scroll"></i>Cola Fotos</h3>
+				</div>
+				<div class="menu">
+					<a class="active-menu" href="../index.html">Home </a>
+					<a href="../Cadastro/cadastro.html">Cadastro</a>
+				</div>
+			</div><!--center-->
+		</header>
+		
+		<div class="form">
+			<form action="#">
+				<div class="form-header"></div>
+					<div class="title">
+						<h1>Faça seu Login!</h1>
+					</div>
+
+					<div class="input-box">
+						<label for="email">Email</label>
+						<input id="email" type="email" name="email" placeholder="Digite seu email" required>
+					</div>
+						
+					<div class="input-box">
+						<label for="password">Senha</label>
+						<input id="password" type="password" name="password" placeholder="Digite sua Senha" required>
+					</div>
+
+					<div class="Lembrar">
+						<label><input type="checkbox">Lembre-me</label>
+						<a href="#"> Esqueceu a senha ?</a>
+					</div>
+		
+					<button type="submit" class="btn">Entrar</button>
+		
+					<div class="register-link">
+						<p>Não tem uma conta ? <a href="../Cadastro/cadastro.html">Cadastre</a></p>
+		
+					</div>
+
+	</section>	
+
+
+
+<footer><p> Todos os direitos reservados</p></footer>
+
+</body>
+</html>

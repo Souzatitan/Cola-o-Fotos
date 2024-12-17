@@ -1,0 +1,179 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center{
+	width:100%;
+	padding:0 2%;
+	display: flex;
+	justify-content: center;
+	margin:0 auto;
+}
+
+header{
+	background-color: rgba(0, 0, 0, 0.3);
+	height:70px;
+}
+
+.logo{
+
+	color:white;
+	margin-top:25px;
+}
+.menu-container{
+	width:100%;
+	justify-content: space-between;
+	display: flex;
+    align-items: center;
+}
+
+.menu-container a{
+	color: white;
+	display: inline-block;
+	margin:0 10px;
+	text-decoration: none;
+	padding:0 10px;
+	line-height:70px;
+	transition: 0.8s;
+}
+
+.menu-container a:hover{
+	background-color:#4B0082;
+}
+
+
+section.main{
+	position: relative;
+	min-height: 800px;
+	background-color: #C6B3FD;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.container {
+    
+    display: flex;
+    
+    gap: 20px;
+}
+
+
+.text-chamada{
+    width: 100%; /* Define o tamanho das divs */
+    padding: 20px;
+	color:black;
+	position: relative;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    flex-direction: column;
+    top: 250px;
+}
+
+.text-chamada  h1{
+    position: relative;
+	font-size: 48px;
+	color: #ec4141;
+    display: flex;
+}
+.text-chamada h3{
+    font-size: 32px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    
+}
+
+.objeto {
+	width: 100%; 
+    padding: 20px;
+	color:black;
+	position: relative;
+    display: flex;
+    top: 150px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+
+	
+}
+
+.fotos {
+    width: 100%; /* Ajusta a largura da imagem ao tamanho da div */
+    height: auto; /* Mantém a proporção da imagem */
+}
+footer{
+	background-color: #333;
+	text-align: center;
+	padding: 8px;
+}
+
+
+
+@media (max-width: 768px) {
+    
+    section.main {
+        height: 100vh;
+    }
+
+    .container {
+       display: flex; 
+       gap: 20px; 
+       align-items: flex-end; 
+       justify-content: space-between; 
+       padding: 20px;
+    }
+
+    .text-chamada {
+        flex: 1;
+        margin-top: 0;
+    }
+      
+      .objeto {
+        flex: 1;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        
+      }
+      
+      .fotos {
+        max-width: 100%; 
+        height: auto;
+      }
+    }
+
+
+@media (max-width: 480px) {
+
+    .logo{
+        
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-container {
+        display: block;
+        justify-content: space-between;
+    }
+    section.main {
+       position: relative;
+        height: 100vh;
+    }
+
+    .container {
+        width: 100%;
+        height: 60%;
+    }
+
+    .text-chamada {
+        width: 40px;
+        transform: scale(0.5);
+    }
+}
